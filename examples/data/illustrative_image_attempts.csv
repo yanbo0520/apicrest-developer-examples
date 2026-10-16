@@ -1,0 +1,7 @@
+provider,model,charged_usd,accepted
+Example-A,synthetic-model-A,0.03,true
+Example-A,synthetic-model-A,0.03,false
+Example-A,synthetic-model-A,0.00,true
+Example-B,synthetic-model-B,0.04,true
+Example-B,synthetic-model-B,0.04,true
+Example-B,synthetic-model-B,0.04,false
