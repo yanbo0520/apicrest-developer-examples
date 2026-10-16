@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "API Crest documentation"
+    url: "https://apicrest.com/apidoc?theme=light"
+    about: "Check current routes, models, account and billing documentation before running a paid request."
+  - name: "Developer getting-started guide"
+    url: "https://github.com/yanbo0520/apicrest-developer-examples#start-here-from-docs-to-your-first-authorized-request"
+    about: "Start with safe offline checks and opt in to live API requests."
