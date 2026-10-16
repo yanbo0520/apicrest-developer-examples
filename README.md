@@ -4,6 +4,20 @@ Documentation-grounded, copy-ready starter scripts for developers integrating [A
 
 > **Status (2026-10-16):** Routes, fields, model IDs, and caveats below were checked against the [public API documentation](https://apicrest.com/apidoc?theme=light). No paid API requests were run while preparing these examples. The programs have been checked offline for syntax and basic contract-handling only. Availability, pricing, performance, and generation quality are **not** asserted. Check the live docs and pricing before use.
 
+## Start here: from docs to your first authorized request
+
+**New to API Crest?** Use the following path. These are documentation and onboarding links, **not** evidence of a working paid integration or a conversion-tracking system.
+
+1. **[Open API Crest](https://apicrest.com/?utm_source=github&utm_medium=referral&utm_campaign=developer_examples)** to find the current account registration/sign-in options. This is a standard campaign link; whether the website currently records UTM parameters has **not been verified**.
+2. **[Check the live API documentation](https://apicrest.com/apidoc?theme=light)** for the model, route, request parameters, and authentication requirements that fit your use case.
+3. **Check live model/channel availability, prices, and any spending controls in your own account** before sending potentially billable requests. We do not claim a free trial, fixed prices, or latency figures.
+4. **Clone this repository and run offline tests** (see [Safe offline checks](#safe-offline-checks)). No API key or paid network request is needed for these checks.
+5. When you deliberately choose to run a live example, provide your own private `APICREST_API_KEY` and pass `--run`. **Do not auto-retry a POST** if the request times out or the outcome is unknown.
+
+**Practical walkthrough:** [Build AI API Examples That Cannot Accidentally Run a Billable Request](https://apicrest.hashnode.dev/build-ai-api-examples-that-cannot-accidentally-run-a-billable-request) on API Crest Developer Notes.
+
+**Have a technical question or discovered a docs mismatch?** [Open a GitHub issue](https://github.com/yanbo0520/apicrest-developer-examples/issues/new) containing a sanitized, minimal reproduction. Do not include API keys, customer data, sensitive image inputs, or private logs.
+
 ## What's inside
 
 | Use case | Python | Node.js 20+ | Documented route |
