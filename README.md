@@ -52,6 +52,8 @@ The public documentation currently lists `claude-haiku-5-5` for the Anthropic-st
 
 See [integration safety notes](docs/INTEGRATION_NOTES.md) for billing, webhooks, size limitations, and security caveats, and [maintainer instructions](docs/PUBLISHING.md).
 
+For outreach, use the [channel attribution plan](docs/OUTREACH_TRACKING.md) rather than assuming clicks, signups, or purchases are tracked automatically.
+
 ## Safe offline checks
 
 No API key is required for these tests. CI deliberately does **not** send traffic to API Crest.
