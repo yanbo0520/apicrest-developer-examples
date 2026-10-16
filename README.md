@@ -68,6 +68,20 @@ See [integration safety notes](docs/INTEGRATION_NOTES.md) for billing, webhooks,
 
 For outreach, use the [channel attribution plan](docs/OUTREACH_TRACKING.md) rather than assuming clicks, signups, or purchases are tracked automatically.
 
+## Compare cost per accepted output — locally, without a key
+
+The cheapest listed price per generation may not be the cheapest **per useful result**. A failed or rejected image may still have a recorded charge. This repository includes a **zero-network** cost calculator that analyzes only a CSV file you supply:
+
+```bash
+python examples/python/cost_per_accepted_output.py examples/data/illustrative_image_attempts.csv
+```
+
+The CSV format is `provider,model,charged_usd,accepted`. Record **actual settled charge** for each attempt from your own usage or invoice, and set `accepted=true` only when the result satisfies *your* quality criteria. The provided data use invented provider names and **synthetic illustrative numbers**; do not interpret them as API Crest prices, free credits, measured quality, or market benchmarks.
+
+The script reports attempts, manually accepted outputs, total recorded charges, and recorded USD per accepted output. It **never calls an API**, reads an API key, or spends anything. A small sample is not statistically representative. For meaningful provider comparisons, also record latency, revision count, and input conditions outside this simple CSV.
+
+For questions about implementing this workflow or documenting task settlement, open an [integration question](https://github.com/yanbo0520/apicrest-developer-examples/issues/new/choose) with a **sanitized** example — no keys, customer data, or billing identifiers.
+
 ## Safe offline checks
 
 No API key is required for these tests. CI deliberately does **not** send traffic to API Crest.
