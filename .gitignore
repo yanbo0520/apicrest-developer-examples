@@ -1,0 +1,19 @@
+# Private credentials and local state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+# Local generated images
+edited*.png
+edited*.jpg
+edited*.jpeg
+edited*.webp
