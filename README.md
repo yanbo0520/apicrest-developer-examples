@@ -50,7 +50,7 @@ The public documentation currently lists `claude-haiku-5-5` for the Anthropic-st
 - **Async media:** POST `{ model, prompt, params }`; save the returned `task_id` before polling `GET /v1/media/status?task_id=...`. Status fields documented include `state`, `is_final`, `result_url`, and `error`. These examples poll every 8 seconds with a 10-minute deadline.
 - **No documented generic idempotency key:** Do not automatically retry a billable POST if the outcome is unknown. Poll or reconcile known task IDs first.
 
-See [integration safety notes](docs/INTEGRATION_NOTES.md) for billing, webhooks, size limitations, and security caveats.
+See [integration safety notes](docs/INTEGRATION_NOTES.md) for billing, webhooks, size limitations, and security caveats, and [maintainer instructions](docs/PUBLISHING.md).
 
 ## Safe offline checks
 
@@ -62,6 +62,7 @@ python -m unittest discover -s tests -v
 node --check examples/node/chat_messages.mjs
 node --check examples/node/image_edit.mjs
 node --check examples/node/media_async.mjs
+node --test tests/test_node_contracts.mjs
 ```
 
 ## Questions, security, and attribution
