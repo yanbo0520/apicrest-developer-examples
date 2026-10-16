@@ -1,0 +1,57 @@
+name: "Integration question or documentation gap"
+description: "Ask about an API Crest integration or report unclear documentation (no secrets)"
+title: "[Integration] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a reproducible API integration question.
+
+        **Before posting:** Please do NOT paste API keys, bearer headers, billing/customer identifiers, private prompts, private images or confidential logs.
+
+        The code examples are documentation-based and their offline tests do not verify upstream availability or paid generation.
+        Please check the [current API docs](https://apicrest.com/apidoc?theme=light) and [starter examples](https://github.com/yanbo0520/apicrest-developer-examples) first.
+  - type: dropdown
+    id: use-case
+    attributes:
+      label: "Which workflow are you integrating?"
+      options:
+        - "Chat / messages"
+        - "Image editing"
+        - "Async media generation / polling"
+        - "Authentication / API key setup"
+        - "Billing / task reconciliation (without sensitive details)"
+        - "Other / documentation question"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What are you trying to accomplish?"
+      description: "Describe the desired behavior or the missing piece in the public docs."
+      placeholder: "I'm trying to submit an async image task and determine when it is final..."
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: "What happens instead?"
+      description: "If relevant, include the HTTP status and a sanitized, minimal code sample. No headers containing credentials."
+      placeholder: "The example status response omitted an expected field. HTTP status: ..."
+    validations:
+      required: false
+  - type: textarea
+    id: docs-link
+    attributes:
+      label: "Relevant docs or example URL"
+      placeholder: "https://apicrest.com/apidoc?theme=light"
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: "Safety check"
+      options:
+        - label: "I've removed all credentials, personal data and private logs before submitting."
+          required: true
