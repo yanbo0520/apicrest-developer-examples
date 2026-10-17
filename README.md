@@ -1,30 +1,28 @@
-# API Crest Developer Examples
+# API Crest Developer Examples — Python & Node.js AI API Integration
 
-Documentation-grounded, copy-ready starter scripts for developers integrating [API Crest](https://apicrest.com/). This repository is maintained as an **API Crest-affiliated developer resource**, not an independent benchmark or review.
+Build AI features with documented [API Crest](https://apicrest.com/) API request examples. This repository shows how to integrate chat, product-image editing, and asynchronous media jobs in Python or Node.js 20+.
 
-> **Status (2026-10-16):** Routes, fields, model IDs, and caveats below were checked against the [public API documentation](https://apicrest.com/apidoc?theme=light). No paid API requests were run while preparing these examples. The programs have been checked offline for syntax and basic contract-handling only. Availability, pricing, performance, and generation quality are **not** asserted. Check the live docs and pricing before use.
+**[Explore API Crest](https://apicrest.com/?utm_source=github&utm_medium=referral&utm_campaign=developer_examples)** · **[API documentation](https://apicrest.com/apidoc?theme=light)** · **[Python quick start](#quick-start)** · **[Node.js quick start](#quick-start)** · **[Ask a technical question](https://github.com/yanbo0520/apicrest-developer-examples/issues/new/choose)**
 
-## Start here: from docs to your first authorized request
+## Choose your integration
 
-**New to API Crest?** Use the following path. These are documentation and onboarding links, **not** evidence of a working paid integration or a conversion-tracking system.
-
-1. **[Open API Crest](https://apicrest.com/?utm_source=github&utm_medium=referral&utm_campaign=developer_examples)** to find the current account registration/sign-in options. This is a standard campaign link; whether the website currently records UTM parameters has **not been verified**.
-2. **[Check the live API documentation](https://apicrest.com/apidoc?theme=light)** for the model, route, request parameters, and authentication requirements that fit your use case.
-3. **Check live model/channel availability, prices, and any spending controls in your own account** before sending potentially billable requests. We do not claim a free trial, fixed prices, or latency figures.
-4. **Clone this repository and run offline tests** (see [Safe offline checks](#safe-offline-checks)). No API key or paid network request is needed for these checks.
-5. When you deliberately choose to run a live example, provide your own private `APICREST_API_KEY` and pass `--run`. **Do not auto-retry a POST** if the request times out or the outcome is unknown.
-
-**Practical walkthrough:** [Build AI API Examples That Cannot Accidentally Run a Billable Request](https://apicrest.hashnode.dev/build-ai-api-examples-that-cannot-accidentally-run-a-billable-request) on API Crest Developer Notes.
-
-**Have a technical question or discovered a docs mismatch?** [Open a GitHub issue](https://github.com/yanbo0520/apicrest-developer-examples/issues/new) containing a sanitized, minimal reproduction. Do not include API keys, customer data, sensitive image inputs, or private logs.
-
-## What's inside
-
-| Use case | Python | Node.js 20+ | Documented route |
+| Building… | Python example | Node.js example | Documented protocol |
 | --- | --- | --- | --- |
-| Text response with Anthropic-style messages | [`chat_messages.py`](examples/python/chat_messages.py) | [`chat_messages.mjs`](examples/node/chat_messages.mjs) | `POST /v1/messages` |
-| Edit an existing product image | [`image_edit.py`](examples/python/image_edit.py) | [`image_edit.mjs`](examples/node/image_edit.mjs) | `POST /v1/images/edits` |
-| Submit and poll an async media task | [`media_async.py`](examples/python/media_async.py) | [`media_async.mjs`](examples/node/media_async.mjs) | `POST /v1/media/generate`, `GET /v1/media/status` |
+| An AI chat feature | [Messages API](examples/python/chat_messages.py) | [Messages API](examples/node/chat_messages.mjs) | `POST /v1/messages` |
+| Product photo editing | [Multipart image edits](examples/python/image_edit.py) | [Multipart image edits](examples/node/image_edit.mjs) | `POST /v1/images/edits` |
+| AI image/media jobs that take time | [Submit + poll](examples/python/media_async.py) | [Submit + poll](examples/node/media_async.mjs) | `POST /v1/media/generate` + `GET /v1/media/status` |
+
+### From documentation to your first authorized request
+
+1. **[Visit API Crest](https://apicrest.com/?utm_source=github&utm_medium=referral&utm_campaign=developer_examples)** and check the current account and API-key onboarding process.
+2. **[Read the live docs](https://apicrest.com/apidoc?theme=light)** for compatible model IDs, request fields, supported channels, and current pricing and availability.
+3. **Clone this repository and run the [offline checks](#safe-offline-checks)**. These do not require an API key or make paid network calls.
+4. **Choose one example**, load your own private `APICREST_API_KEY`, and deliberately pass `--run` only when you have reviewed any potential charges.
+5. **Persist task IDs** for async jobs. If a billable submission times out, don't blindly retry it.
+
+For a longer worked example, read [Build AI API Examples That Cannot Accidentally Run a Billable Request](https://apicrest.hashnode.dev/build-ai-api-examples-that-cannot-accidentally-run-a-billable-request). For sensitive problems, read [SECURITY.md](SECURITY.md); for a general docs mismatch, [ask a sanitized integration question](https://github.com/yanbo0520/apicrest-developer-examples/issues/new/choose).
+
+**Scope:** API Crest-affiliated examples based on [public documentation reviewed October 16, 2026](https://apicrest.com/apidoc?theme=light). Offline syntax/contract checks passed, but no paid API calls, availability tests, performance benchmarks, or price comparisons were performed. Model availability and real behavior depend on the live service and your account. The UTM campaign link does not imply website-side tracking is installed.
 
 All examples use the documented base URL `https://api.vv666.ai` and read your API key from **the environment** (never from checked-in source). Every example requires an explicit `--run` flag to prevent accidental billable requests.
 
