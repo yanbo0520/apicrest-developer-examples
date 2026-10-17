@@ -20,6 +20,8 @@ Build AI features with documented [API Crest](https://apicrest.com/) API request
 4. **Choose one example**, load your own private `APICREST_API_KEY`, and deliberately pass `--run` only when you have reviewed any potential charges.
 5. **Persist task IDs** for async jobs. If a billable submission times out, don't blindly retry it.
 
+**Having an integration problem?** See the [API troubleshooting guide](docs/TROUBLESHOOTING.md) for authentication, request format, async status and timeout checks.
+
 For a longer worked example, read [Build AI API Examples That Cannot Accidentally Run a Billable Request](https://apicrest.hashnode.dev/build-ai-api-examples-that-cannot-accidentally-run-a-billable-request). For sensitive problems, read [SECURITY.md](SECURITY.md); for a general docs mismatch, [ask a sanitized integration question](https://github.com/yanbo0520/apicrest-developer-examples/issues/new/choose).
 
 **Scope:** API Crest-affiliated examples based on [public documentation reviewed October 16, 2026](https://apicrest.com/apidoc?theme=light). Offline syntax/contract checks passed, but no paid API calls, availability tests, performance benchmarks, or price comparisons were performed. Model availability and real behavior depend on the live service and your account. The UTM campaign link does not imply website-side tracking is installed.
