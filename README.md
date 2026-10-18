@@ -2,7 +2,7 @@
 
 Build AI features with documented [API Crest](https://apicrest.com/) API request examples. This repository shows how to integrate chat, product-image editing, and asynchronous media jobs in Python or Node.js 20+.
 
-**[Explore API Crest](https://apicrest.com/?utm_source=github&utm_medium=referral&utm_campaign=developer_examples)** · **[API documentation](https://apicrest.com/apidoc?theme=light)** · **[Python quick start](#quick-start)** · **[Node.js quick start](#quick-start)** · **[Ask a technical question](https://github.com/yanbo0520/apicrest-developer-examples/issues/new/choose)**
+**[Explore API Crest](https://apicrest.com/?utm_source=github&utm_medium=referral&utm_campaign=developer_examples)** · **[API documentation](https://apicrest.com/apidoc?theme=light)** · **[Python quick start](#quick-start)** · **[Node.js quick start](#quick-start)** · **[Share your integration use case](https://github.com/yanbo0520/apicrest-developer-examples/issues/1)** · **[Ask a technical question](https://github.com/yanbo0520/apicrest-developer-examples/issues/new/choose)**
 
 ## Choose your integration
 
