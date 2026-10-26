@@ -20,6 +20,8 @@ Build AI features with documented [API Crest](https://apicrest.com/) API request
 4. **Choose one example**, load your own private `APICREST_API_KEY`, and deliberately pass `--run` only when you have reviewed any potential charges.
 5. **Persist task IDs** for async jobs. If a billable submission times out, don't blindly retry it.
 
+**New to API Crest?** Start with the [Developer FAQ](docs/DEVELOPER_FAQ.md) for supported example workflows, async task handling, credentials, model availability, and API base URL verification.
+
 **Having an integration problem?** See the [API troubleshooting guide](docs/TROUBLESHOOTING.md) for authentication, request format, async status and timeout checks.
 
 **Developer article:** [The AI API Timeout Problem: How to Avoid Duplicate Image and Video Jobs](articles/ai-api-timeout-avoid-duplicate-image-video-jobs.md) — understanding ambiguous submissions, task IDs, and safe polling.
